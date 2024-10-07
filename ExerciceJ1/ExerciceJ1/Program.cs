@@ -22,11 +22,13 @@ namespace ExerciceJ1
            int valeurInitial = algoT.valueTime();
            string time2 = algoT.Choose_convert_time();
            algoT.Calcul(time, time2, valeurInitial);
-           algoT.SecondToMinuteOrMinuteToHeure( valeurInitial);
-           algoT.HeureToMinuteOrMinuteToSeconde( valeurInitial);
-           algoT.SecondToHeure(valeurInitial);
-           algoT.HeureToSeconde(valeurInitial);
-           algoT.FromSeconde(time, time2, valeurInitial);
+           valeurInitial = algoT.SecondToMinuteOrMinuteToHeure( valeurInitial);
+           valeurInitial = algoT.HeureToMinuteOrMinuteToSeconde( valeurInitial);
+           valeurInitial = algoT.SecondToHeure(valeurInitial);
+           valeurInitial = algoT.HeureToSeconde(valeurInitial);
+           algoT.FromSeconde( time2, valeurInitial);
+           algoT.FromMinute( time2, valeurInitial);
+           algoT.FromHeure( time2, valeurInitial);
         }
     }
 }

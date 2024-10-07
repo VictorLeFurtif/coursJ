@@ -17,6 +17,7 @@ namespace ExerciceJ1
             int valeurInitial = int.Parse(Console.ReadLine());
             return valeurInitial;
         }
+
         public string Choose_convert_time()
         {
             Console.Write("Veuillez choisir entre seconde, minute ou heure pour votre conversion : ");
@@ -30,42 +31,95 @@ namespace ExerciceJ1
             {
                 Console.Write("C'est la même");
             }
-            
-                
+
+            if (time == "seconde")
+            {
+                FromSeconde(time2,valeurInitial);
+            }
+            if (time == "minute")
+            {
+                FromSeconde(time2,  valeurInitial);
+            }
+            if (time == "heure")
+            {
+                FromSeconde(time2, valeurInitial);
             }
 
-        public void SecondToMinuteOrMinuteToHeure(int valeurInitial)
-        {
-            valeurInitial = valeurInitial / 60;  
-        }
-        public void HeureToMinuteOrMinuteToSeconde(int valeurInitial)
-        {
-            valeurInitial = valeurInitial * 60;  
-        }
-        public void SecondToHeure(int valeurInitial)
-        {
-            valeurInitial = valeurInitial / 3600;  
-        }
-        public void HeureToSeconde(int valeurInitial)
-        {
-            valeurInitial = valeurInitial * 3600;  
         }
 
-        public void FromSeconde(string time, string time2, int valeurInitial)
+        public int SecondToMinuteOrMinuteToHeure(int valeurInitial)
         {
-            if (time2 =="minute")
+            valeurInitial = valeurInitial / 60;
+            return valeurInitial;
+        }
+
+        public int HeureToMinuteOrMinuteToSeconde(int valeurInitial)
+        {
+            valeurInitial = valeurInitial * 60;
+            return valeurInitial;
+        }
+
+        public int SecondToHeure(int valeurInitial)
+        {
+            valeurInitial = valeurInitial / 3600;
+            return valeurInitial;
+        }
+
+        public int HeureToSeconde(int valeurInitial)
+        {
+            valeurInitial = valeurInitial * 3600;
+            return valeurInitial;
+        }
+
+        public void FromSeconde(string time2, int valeurInitial)
+        {
+            if (time2 == "minute")
             {
-                SecondToMinuteOrMinuteToHeure();
-                
+                SecondToMinuteOrMinuteToHeure(valeurInitial);
+                Console.Write(valeurInitial);
             }
-            if (time2 =="heure")
+
+            if (time2 == "heure")
             {
-                HeureToSeconde();
+                HeureToSeconde(valeurInitial);
+                Console.Write(valeurInitial);
             }
         }
-    } 
-        
-        
-        
-        
+
+        public void FromMinute(string time2, int valeurInitial)
+        {
+            if (time2 == "seconde")
+            {
+                HeureToMinuteOrMinuteToSeconde(valeurInitial);
+                Console.Write(valeurInitial);
+            }
+
+            if (time2 == "heure")
+            {
+                SecondToMinuteOrMinuteToHeure(valeurInitial);
+                Console.Write(valeurInitial);
+            }
+
+
+        }
+
+        public void FromHeure(string time2, int valeurInitial)
+        {
+            if (time2 == "seconde")
+            {
+                HeureToSeconde(valeurInitial);
+                Console.Write(valeurInitial);
+            }
+
+            if (time2 == "minute")
+            {
+                HeureToMinuteOrMinuteToSeconde(valeurInitial);
+                Console.Write(valeurInitial);
+            }
+        }
+
+
+
+
     }
+}
