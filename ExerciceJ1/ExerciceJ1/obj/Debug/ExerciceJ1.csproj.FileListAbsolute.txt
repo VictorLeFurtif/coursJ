@@ -1,0 +1,6 @@
+C:\Users\v.baz\WORK\coursJ\ExerciceJ1\ExerciceJ1\bin\Debug\ExerciceJ1.exe
+C:\Users\v.baz\WORK\coursJ\ExerciceJ1\ExerciceJ1\bin\Debug\ExerciceJ1.pdb
+C:\Users\v.baz\WORK\coursJ\ExerciceJ1\ExerciceJ1\obj\Debug\ExerciceJ1.csproj.AssemblyReference.cache
+C:\Users\v.baz\WORK\coursJ\ExerciceJ1\ExerciceJ1\obj\Debug\ExerciceJ1.csproj.CoreCompileInputs.cache
+C:\Users\v.baz\WORK\coursJ\ExerciceJ1\ExerciceJ1\obj\Debug\ExerciceJ1.exe
+C:\Users\v.baz\WORK\coursJ\ExerciceJ1\ExerciceJ1\obj\Debug\ExerciceJ1.pdb
