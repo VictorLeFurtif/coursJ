@@ -43,7 +43,9 @@
         <Compile Include="algo1.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="Tableau2.cs" />
         <Compile Include="Tableur.cs" />
+        <Compile Include="TimeExercice.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
