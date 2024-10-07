@@ -30,8 +30,8 @@ namespace ExerciceJ1
            foreach (int element in tableau)
            {
                
-               tableau[element] = tableau.Length - v;
-               Console.WriteLine(tableau[element]);
+               tableau[v] = tableau.Length - v;
+               Console.WriteLine(tableau[v]);
                v = v + 1;
            } 
            
